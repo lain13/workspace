@@ -1,6 +1,10 @@
 import example.GreetingService;
 
-
+/**
+ * HelloWorld Service
+ * @author y2292712
+ *
+ */
 public class HelloWorld {
 	private GreetingService service;
 
