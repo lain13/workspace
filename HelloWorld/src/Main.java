@@ -1,7 +1,13 @@
+import example.GoodAfternoonService;
+import example.ProxyGreetingService;
+
 
 public class Main {
 	public static void main(String[] args) {
-		System.out.println("HELLO WORLD!");
-		System.out.println("HELLO WORLD!");
+		HelloWorld world = new HelloWorld();
+		GoodAfternoonService service = new GoodAfternoonService();
+		ProxyGreetingService proxy = new ProxyGreetingService(service);
+		world.setService(proxy);
+		world.sayHello();
 	}
 }
